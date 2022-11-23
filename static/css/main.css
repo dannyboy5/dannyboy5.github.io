@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+body {
+    background-color: #152028;/*#2d2e53;*/
+    color: white;
+}
+
+.py-5.header {
+    background-image: url('../images/astro.jpg');
+    background-position: 0 -100px;
+    background-size: cover !important;
+    width:100%;
+    height:100%;
+    background-repeat: no-repeat;
+    text-align: right;
+    font-family: 'Inconsolata', monospace;
+}
+
+/*.typed-text::after {
+  content: "";
+  position: absolute;
+  width: 4px; /*space before cursor
+  height: 4.8%;
+  border-right: 2px solid white; /*cursor width
+  animation: blink 0.5s infinite ease;
+}*/
+
+.display-4 b {
+  background-color: black; /*comment out*/
+  padding: 0.5rem;
+}
+
+.typewriter {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.typewriter p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: right;
+  overflow: hidden;
+  background-color: black; /*comment out*/
+}
+.typewriter p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+  background-color: black; /*comment out*/
+}
+.typerwriter p span.cursor {
+  display: inline-block;
+  background-color: white;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.typewriter p span.cursor.typing {
+  animation: none;
+}
+
+/*@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
+
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* NAVBAR =====================================*/
+
+.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link.active, .navbar .nav-item:hover {
+    color: #4e4caf;
+}
+
+.bi.bi-house,  .bi.bi-journal-text {
+    vertical-align: -2px;
+}
+
+.bi.bi-wrench {
+  vertical-align: -3px;
+}
+
+/* DEMO GENERAL ============================== */
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+  }
+  
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+  }
+  
+  .hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  
+  .hover-content {
+    position: relative;
+    z-index: 99;
+  }
+  
+  
+  /* DEMO 1 ============================== */
+  .hover-1 img {
+    width: 105%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    transition: all 0.3s;
+  }
+  
+  .hover-1-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    transition: all 0.4s;
+  }
+  
+  .hover-1 .hover-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hover-1-description {
+    transform: translateY(0.5rem);
+    transition: all 0.4s;
+    opacity: 0;
+  }
+  
+  .hover-1:hover .hover-1-content {
+    bottom: 2rem;
+  }
+  
+  .hover-1:hover .hover-1-description {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .hover-1:hover img {
+    left: 0;
+  }
+  
+  .hover-1:hover .hover-overlay {
+    opacity: 0;
+  }  
