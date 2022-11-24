@@ -5,105 +5,38 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       <link rel="stylesheet" href="css/main.css">
-      <title>Danny's Website</title>
+      <title>Magic Chessboard</title>
       <link rel="icon" href="images/favicon.ico">
   </head>
 
-  
-  <!-- Header -->
-  <!-- Background video -->
-  <div class="video-background-holder">
-    <div class="video-background-overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="images/testtubes.mp4" type="video/mp4">
-    </video>
-    <!-- Video from: https://www.pexels.com/@artempodrez/-->
-    <div class="video-background-content container h-100">
-      <section class="py-5 header text-right">
-        <div class="container py-5 text-white">
-            <header class="py-5">
-                <h1 class="display-4"><b>Danny Benavides</b></h1>
-                <div class="typewriter"><p>I am a <span class="typed-text"></span><span class="cursor"><!--&nbsp;--></span></p></div>
-            </header>
-        </div>
-      </section>
-      </div>
-    </div>
-  </div>
 
+  <!-- Header -->
   <!-- Navbar Sticky -->
   <header class="header sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow-sm">
-        <div class="container"><a class="navbar-brand" href="/">
+        <div class="container"><a class="navbar-brand" href="index.html">
             <strong class="h6 mb-0 font-weight-bold text-uppercase"><img src="images/DBlogo.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"> Benavides</strong></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul id="navbtns" class="navbar-nav ml-auto">
-                  <li class="nav-item active"><a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg> Home <span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg> Home </a></li>
                   <li class="nav-item"><a class="nav-link" href="about.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-journal-text" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M4 1h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1H2a2 2 0 0 1 2-2z"/><path d="M2 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H2z"/><path fill-rule="evenodd" d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/></svg> About </a></li>
                   <li class="nav-item"><a class="nav-link" href="projects.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wrench" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019L13 11l-.471.242-.529.026-.287.445-.445.287-.026.529L11 13l.242.471.026.529.445.287.287.445.529.026L13 15l.471-.242.529-.026.287-.445.445-.287.026-.529L15 13l-.242-.471-.026-.529-.445-.287-.287-.445-.529-.026z"/></svg> Projects </a></li>
                   <li class="nav-item"><a class="nav-link" href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg> Contact </a></li>
-                  <!--<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </li>-->
                 </ul>
             </div>
         </div>
     </nav>
   </header>
 
-  <!-- Projects -->
-  <div class="container py-0">
-    <div class="py-5">
-      <h3 class="font-weight-bold mb-0">Featured Projects</h3>
-      <p class="font-italic text-muted mb-4">Here are a few pojects that I have worked on. The one that inspired me to pursue more electronic and technological projects is my Raspberry Pi Gameboy made from scratch!</p>
-      <div class="row">
-        <!-- Item 1 -->
-        <div class="col-lg-6 mb-3 mb-lg-0">
-          <a href="projects.html"><div class="hover hover-1 text-white rounded" ><img src="images/rpis.jpg" alt="">
-            <!--Image from: https://www.pexels.com/@craigmdennis/-->
-            <div class="hover-overlay"></div>
-            <div class="hover-1-content px-5 py-4">
-              <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Hardware </span>Projects</h3>
-              <p class="hover-1-description font-weight-light mb-0">Tinkering with microcontrollers and SBC's.</p>
-            </div>
-          </div></a>
-        </div>
-        <!-- Item 2 -->
-        <div class="col-lg-6">
-          <a href="projects.html#software"><div class="hover hover-1 text-white rounded"><img src="images/code.jpg" alt="">
-            <!--Image from: https://www.pexels.com/@jorge-jesus-137537/-->
-            <div class="hover-overlay"></div>
-            <div class="hover-1-content px-5 py-4">
-              <h3 class="hover-1-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Software </span>Projects</h3>
-              <p class="hover-1-description font-weight-light mb-0">Creating any crazy idea that comes to my mind.</p>
-            </div>
-          </div></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Body -->
   <body>
-    <div class="container py-0">
-      <div style="padding:15px 15px 15px;font-size:20px">
-          <p><b>This is Danny's Website</b></p>
-          <p><b>To Do:</b></p>
-          <p>Make a sticky navbar with js (transparent at first then opaque)</p>
-          <p>Fix Logo</p>
-          <p>Make McCabe Thiele Calculator Python</p>
-          <p>Learn how to add pictures (Gameboy Pi/PC projects)</p>
-          <p>Cool typer text</p>
-          <p><b>Note:</b> I have no idea what I'm doing!</p>
-          <p>Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor dummy text to enable scrolling, sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class="container py-5">
+      <div style="padding:15px 15px 15px; font-size:40px; text-align: center;">
+          <p><b>Website under construction.</b></p>
+          <p><b>Come back soon!</b></p>
       </div>
     </div>
-    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
